@@ -4,31 +4,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aryan | Cloud & Fullstack Developer</title>
+  <style>
+    /* Reset & Basics */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+    header h1 { font-size: 2.8rem; color: #38bdf8; }
+    header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+
+    /* Sections */
+    section { max-width: 1000px; margin: 2rem auto; padding: 2rem; }
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #334155;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      color: #38bdf8;
+    }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      margin: 0.4rem;
+      transition: 0.3s;
+    }
+    .skills span:hover { background: #38bdf8; color: #0f172a; }
+
+    /* Projects */
+    .project {
+      background: #1e293b;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .project:hover { transform: translateY(-5px); background: #334155; }
+    .project h3 { color: #38bdf8; }
+    .project a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Contact */
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 0.5rem;
+    }
+    .contact a:hover { color: #facc15; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e293b;
+      color: #94a3b8;
+      margin-top: 2rem;
+    }
+    footer a { color: #38bdf8; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Aryan 👋</h1>
-  <p>🚀 Cloud & Fullstack Developer | Learner | Builder</p>
+  <!-- Header -->
+  <header>
+    <h1>Hi, I'm Aryan 👋</h1>
+    <p>🚀 Cloud & Fullstack Developer | Learner | Builder</p>
+  </header>
 
-  <h2>🛠️ Skills</h2>
-  <ul>
-    <li>AWS</li>
-    <li>S3</li>
-    <li>IAM</li>
-    <li>EC2</li>
-    <li>Python</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-  </ul>
+  <!-- Skills -->
+  <section>
+    <h2>🛠️ Skills</h2>
+    <div class="skills">
+      <span>AWS</span>
+      <span>S3</span>
+      <span>IAM</span>
+      <span>EC2</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </section>
 
-  <h2>📂 Projects</h2>
-  <p>1. Cloud Notes App - <a href="https://github.com/arxyanf/CloudNotes">View</a></p>
-  <p>2. Portfolio Website - <a href="https://github.com/arxyanf">View</a></p>
+  <!-- Projects -->
+  <section>
+    <h2>📂 Projects</h2>
+    <div class="project">
+      <h3>Cloud Notes App</h3>
+      <p>A note-taking app hosted on AWS with authentication and cloud storage.</p>
+      <a href="https://github.com/arxyanf/CloudNotes" target="_blank">🔗 View Project</a>
+    </div>
+    <div class="project">
+      <h3>Bank Management System</h3>
+      <p>CLI-based banking system with file-based persistence.</p>
+      <a href="https://github.com/arxyanf/Bank_Management_System" target="_blank">🔗 View Project</a>
+    </div>
+    <div class="project">
+      <h3>Basic Calculator</h3>
+      <p>A CLI calculator with modular code and input validation.</p>
+      <a href="https://github.com/arxyanf/Basic_Calculator_Python_Project" target="_blank">🔗 View Project</a>
+    </div>
+  </section>
 
-  <h2>🌐 Connect with Me</h2>
-  <p>
-    <a href="https://www.linkedin.com/in/arxyanf">LinkedIn</a> |
-    <a href="https://github.com/arxyanf">GitHub</a>
-  </p>
+  <!-- Contact -->
+  <section>
+    <h2>🌐 Connect with Me</h2>
+    <div class="contact">
+      <a href="mailto:vaishnavaryan0@gmail.com">📧 Email</a> |
+      <a href="https://www.linkedin.com/in/aryan-vaishnav-programmer" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/arxyanf" target="_blank">GitHub</a> |
+      <a href="aryan_resume.pdf" target="_blank">📄 Resume</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aryan | Built with ❤️ using HTML & CSS</p>
+  </footer>
 </body>
 </html>
