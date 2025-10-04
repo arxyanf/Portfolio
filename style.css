@@ -108,16 +108,12 @@ body {
   color: var(--clr-light);
 }
 
-.hero-image {
-  flex: 1;
-  text-align: center;
-  min-width: 200px;
-}
-
 .hero-image img {
-  max-width: 300px;
-  border-radius: 10px;
-  object-fit: cover;
+  max-width: 300px;     /* limits image size */
+  width: 100%;          /* scales down for smaller screens */
+  height: auto;         /* keeps proportions */
+  border-radius: 10px;  /* optional rounded corners */
+  object-fit: cover;    /* keeps it clean if cropped */
 }
 
 /* About */
