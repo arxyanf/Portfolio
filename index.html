@@ -1,156 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aryan | Cloud & Fullstack Developer</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      padding: 3rem 2rem;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-    }
-    header img {
-      width: 180px;   /* zoomed in size */
-      height: 180px;  /* zoomed in size */
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      margin-bottom: 1rem;
-      object-fit: cover;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.6); /* glowing border */
-    }
-    header h1 { font-size: 2.4rem; color: #38bdf8; margin-top: 0.5rem; }
-    header p { font-size: 1.1rem; color: #94a3b8; margin-top: 0.3rem; }
-
-    /* Sections */
-    section { max-width: 900px; margin: 2rem auto; padding: 1.5rem; }
-    h2 {
-      font-size: 1.6rem;
-      border-bottom: 2px solid #334155;
-      margin-bottom: 1rem;
-      padding-bottom: 0.3rem;
-      color: #38bdf8;
-    }
-
-    /* Skills */
-    .skills { text-align: center; }
-    .skills span {
-      display: inline-block;
-      background: #1e293b;
-      color: #f8fafc;
-      padding: 0.6rem 1.2rem;
-      border-radius: 20px;
-      margin: 0.4rem;
-      transition: 0.3s;
-      font-size: 1rem;
-    }
-    .skills span:hover { background: #38bdf8; color: #0f172a; }
-
-    /* Projects */
-    .project {
-      background: #1e293b;
-      padding: 1.2rem;
-      margin-bottom: 1.2rem;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .project:hover { transform: translateY(-5px); background: #334155; }
-    .project h3 { color: #38bdf8; margin-bottom: 0.5rem; }
-    .project a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* Contact */
-    .contact { text-align: center; }
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 0.5rem;
-      font-size: 1.1rem;
-    }
-    .contact a:hover { color: #facc15; }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1e293b;
-      color: #94a3b8;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-    footer a { color: #38bdf8; text-decoration: none; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header / Navbar -->
   <header>
-    <img src="profile.jpg" alt="Aryan's Profile Picture">
-    <h1>Hi, I'm Aryan 👋</h1>
-    <p>🚀 Cloud & Fullstack Developer | Learner | Builder</p>
+    <nav class="navbar">
+      <div class="logo">VS</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Skills -->
-  <section>
-    <h2>🛠️ Skills</h2>
-    <div class="skills">
-      <span>AWS</span>
-      <span>S3</span>
-      <span>IAM</span>
-      <span>EC2</span>
-      <span>Python</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Vatsal Shukla</span></h1>
+      <p>Computer Science student building web apps, mobile apps & AI projects.</p>
+      <div class="hero-buttons">
+        <a href="/resume.pdf" class="btn-primary">Download Resume</a>
+        <a href="#projects" class="btn-secondary">My Projects</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/300" alt="Profile Picture" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am passionate about technology and building projects that solve real-world problems.</p>
+    <div class="about-cards">
+      <div class="card">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js</li>
+          <li>Python, C++</li>
+          <li>MongoDB, MySQL</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p>B.Tech in Computer Science — Poornima University, Jaipur</p>
+      </div>
+      <div class="card">
+        <h3>Certificates</h3>
+        <ul>
+          <li>Cloud Computing - NPTEL</li>
+          <li>Privacy & Security - NPTEL</li>
+          <li>Basics of C - Udemy</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section>
-    <h2>📂 Projects</h2>
-    <div class="project">
-      <h3>Cloud Notes App</h3>
-      <p>A note-taking app hosted on AWS with authentication and cloud storage.</p>
-      <a href="https://github.com/arxyanf/CloudNotes" target="_blank">🔗 View Project</a>
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>SafeHer</h3>
+        <p>React Native app for personal safety (in development).</p>
+      </div>
+      <div class="card">
+        <h3>Simple Chat</h3>
+        <p>Real-time chat using Node.js and Socket.io.</p>
+      </div>
+      <div class="card">
+        <h3>Generative AI Project</h3>
+        <p>LangGraph + FastAPI + Streamlit agent.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development Projects</h3>
+        <p>Modern responsive websites & UIs.</p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Bank Management System</h3>
-      <p>CLI-based banking system with file-based persistence.</p>
-      <a href="https://github.com/arxyanf/Bank_Management_System" target="_blank">🔗 View Project</a>
-    </div>
-    <div class="project">
-      <h3>Basic Calculator</h3>
-      <p>A CLI calculator with modular code and input validation.</p>
-      <a href="https://github.com/arxyanf/Basic_Calculator_Python_Project" target="_blank">🔗 View Project</a>
-    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>Smart India Hackathon 2024</strong> — IIT Hyderabad Finals</li>
+      <li><strong>Rajasthan Police Hackathon 1.0</strong> — Team project</li>
+      <li><strong>Poornima Hackathon 2023</strong> — Group project</li>
+    </ul>
   </section>
 
   <!-- Contact -->
-  <section>
-    <h2>🌐 Connect with Me</h2>
-    <div class="contact">
-      <a href="mailto:vaishnavaryan0@gmail.com">📧 Email</a> |
-      <a href="https://www.linkedin.com/in/aryan-vaishnav-programmer" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/arxyanf" target="_blank">GitHub</a> |
-      <a href="aryan_resume.pdf" target="_blank">📄 Resume</a>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: vatsalv19@gmail.com | Phone: 9660818758</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Aryan | Built with ❤️ using HTML & CSS</p>
+    <p>Made with ♥ by Aryan Vaishnav</p>
   </footer>
 </body>
 </html>
