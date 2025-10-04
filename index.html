@@ -2,117 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Vaishnav | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Single Page Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="logo">AV</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo"><strong>Arxyanf</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm <span>Aryan Vaishnav</span></h1>
-      <p>I’m a Computer Science student passionate about building web apps, mobile apps & AI projects.</p>
-      <div class="hero-buttons">
-        <a href="/resume.pdf" class="btn-primary">Download Resume</a>
-        <a href="#projects" class="btn-secondary">My Projects</a>
+  <main>
+    <section id="about">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo" />
+      <div>
+        <h2>About Me</h2>
+        <p>Hello! I'm Arxyanf, a passionate developer and designer. I love creating beautiful, functional web experiences that combine creativity and technical skills.</p>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="https://via.placeholder.com/300" alt="Aryan Vaishnav" />
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I’m Aryan Vaishnav, a dedicated Computer Science student from India. I love creating software solutions that have real-world impact. My focus is on web development, mobile applications, and leveraging AI to solve problems.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x140" alt="Project Image" />
+        <div class="project-content">
+          <div class="project-title">Project One</div>
+          <p>A brief description of Project One highlighting key features and technologies used.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x140" alt="Project Image" />
+        <div class="project-content">
+          <div class="project-title">Project Two</div>
+          <p>A brief description of Project Two highlighting key features and technologies used.</p>
+        </div>
+      </div>
+      <!-- more projects... -->
+    </section>
 
-    <div class="about-cards">
-      <div class="card">
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, Node.js</li>
-          <li>Python, C++</li>
-          <li>MongoDB, MySQL, Firebase</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Education</h3>
-        <p>B.Tech in Computer Science — Poornima University, Jaipur</p>
-      </div>
-      <div class="card">
-        <h3>Certificates</h3>
-        <ul>
-          <li>Cloud Computing - NPTEL</li>
-          <li>Privacy & Security - NPTEL</li>
-          <li>Basics of C - Udemy</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-cards">
-      <div class="card">
-        <h3>SafeHer</h3>
-        <p>React Native app for personal safety (in development).</p>
-      </div>
-      <div class="card">
-        <h3>Simple Chat</h3>
-        <p>Real-time chat application using Node.js and Socket.io.</p>
-      </div>
-      <div class="card">
-        <h3>Generative AI Project</h3>
-        <p>LangGraph + FastAPI + Streamlit agent.</p>
-      </div>
-      <div class="card">
-        <h3>Web Development Projects</h3>
-        <p>Various modern responsive websites & user interfaces.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements -->
-  <section id="achievements" class="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li><strong>Smart India Hackathon 2024</strong> — IIT Hyderabad Finals</li>
-      <li><strong>Rajasthan Police Hackathon 1.0</strong> — Team Project</li>
-      <li><strong>Poornima Hackathon 2023</strong> — Group Project</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:aryanv@gmail.com">aryanv@gmail.com</a> | Phone: 9660818758</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>Made with ♥ by Aryan Vaishnav</p>
-  </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or inquiries!</p>
+      <a href="mailto:arxyanf@example.com">Email Me</a>
+    </section>
+  </main>
 </body>
 </html>
