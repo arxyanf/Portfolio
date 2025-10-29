@@ -3,7 +3,7 @@
     --primary-color: #0a84ff; /* A nice blue */
     --secondary-color: #30d158; /* A vibrant green for highlights */
     --background-color: #f5f5f7; /* Light grey background */
-    --card-background: #ffffff;  /* White for cards */
+    --card-background: #ffffff;  /* White for cards AND alternate sections */
     --text-color: #1d1d1f;      /* Dark grey for text */
     --text-color-light: #6e6e73; /* Lighter grey for descriptions */
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -55,11 +55,26 @@ img {
     display: block;
 }
 
+/* * UPDATED: This class now ONLY handles centering and padding
+ */
 .section-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 5rem 2rem;
 }
+
+/* * NEW: Apply alternate background colors
+ * We are making the 'About' and 'Projects' sections white
+ * to contrast with the light-grey 'Skills' and 'Contact' sections.
+ */
+#about,
+#projects {
+    background-color: var(--card-background);
+    /* Add subtle borders to separate the sections */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 
 /* ======== HEADER & NAVIGATION ======== */
 header {
@@ -102,7 +117,6 @@ nav {
     color: var(--secondary-color);
 }
 
-/* Active link style */
 .nav-link.active {
     color: var(--primary-color);
     font-weight: 600;
@@ -124,7 +138,13 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 5rem; /* Offset for fixed header */
+}
+
+/* * NEW: This rule applies the top padding to the *container*
+ * inside the hero, to offset for the fixed header.
+ */
+#hero .section-container {
+    padding-top: 5rem;
 }
 
 .hero-content h1 {
@@ -219,6 +239,7 @@ nav {
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee; /* Add subtle border to cards */
 }
 
 .project-card:hover {
@@ -292,12 +313,19 @@ nav {
 /* ======== FOOTER ======== */
 footer {
     text-align: center;
-    padding: 2rem;
+    /* UPDATED: use var(--card-background) for consistency */
     background-color: var(--card-background);
     color: var(--text-color-light);
-    margin-top: 3rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e0e0e0;
 }
+
+/* * UPDATED: The padding is now on the container *inside* the footer
+ * to allow the background color to be full-width.
+ */
+footer .section-container {
+    padding: 2rem; /* Simplified padding for footer */
+}
+
 
 /* ======== RESPONSIVE DESIGN ======== */
 @media (max-width: 768px) {
@@ -306,7 +334,6 @@ footer {
     }
 
     .nav-list {
-        /* This is a simple hide, a full mobile menu is more complex */
         display: none; 
     }
 
