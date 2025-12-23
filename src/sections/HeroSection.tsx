@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ onNameClick }: HeroSectionProps) => {
   const name = "Aryan Vaishnav";
-  
+
   const scrollToProjects = () => {
     const element = document.querySelector("#projects");
     if (element) {
@@ -30,14 +30,14 @@ const HeroSection = ({ onNameClick }: HeroSectionProps) => {
   };
 
   const letterVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
       rotateX: -90,
       scale: 0.5,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       rotateX: 0,
       scale: 1,
@@ -151,7 +151,7 @@ const HeroSection = ({ onNameClick }: HeroSectionProps) => {
               asChild
               className="gap-2 text-base"
             >
-              <a href="/resume.pdf" download>
+              <a href="/Aryan_Vaishnav_Resume.pdf" download>
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>

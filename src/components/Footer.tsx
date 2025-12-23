@@ -10,12 +10,12 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {currentYear} Aryan Vaishnav. Built with React & Tailwind CSS.
           </p>
-          
+
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, url: "https://github.com/aryanvaishnav" },
-              { icon: Linkedin, url: "https://linkedin.com/in/aryanvaishnav" },
-              { icon: Mail, url: "mailto:aryan@example.com" },
+              { icon: Github, url: "https://github.com/arxyanf" },
+              { icon: Linkedin, url: "https://www.linkedin.com/in/aryan-vaishnav-programmer" },
+              { icon: Mail, url: "mailto:vaishnavaryan0@gmail.com" },
             ].map((social, index) => (
               <a
                 key={index}
