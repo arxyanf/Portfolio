@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+# 🚀 Aryan Vaishnav – Developer Portfolio
 
-## Project info
+A modern, interactive developer portfolio built with **React, Vite, Tailwind CSS, and 3D UI elements**, showcasing my work, skills, and experience in **Cloud, DevOps, and Backend Engineering**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🌐 **Live Portfolio**: https://arxyanf.github.io/Portfolio/
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- ⚡ Fast and lightweight build using **Vite**
+- 🎨 Modern UI with **Tailwind CSS** and smooth animations
+- 🧩 Modular React component architecture
+- 🌀 Scroll-based interactive sections (Experience & Education)
+- 🖼️ Cinematic profile modal with large image layout
+- 🧠 Developer-focused content with a clean, professional aesthetic
+- 📱 Fully responsive (mobile-first)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+**Frontend**
+- React (TypeScript)
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- Framer Motion
 
-## How can I deploy this project?
+**UI / Design**
+- shadcn/ui
+- Glassmorphism & subtle 3D effects
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**Tooling**
+- Git & GitHub
+- GitHub Pages (deployment)
+- npm
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📂 Project Structure
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```text
+Portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── sections/
+│   ├── data/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+├── package.json
+└── README.md
+⚙️ Running Locally
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Clone the repository:
+
+git clone https://github.com/arxyanf/Portfolio.git
+cd Portfolio
+
+
+Install dependencies:
+
+npm install
+
+
+Start development server:
+
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+
+🚀 Deployment (GitHub Pages)
+
+This portfolio is deployed using GitHub Pages with a Vite build pipeline.
+
+To deploy manually:
+
+npm run build
+npm run deploy
+
+👤 About Me
+
+I am a Cloud & DevOps–focused developer with strong experience in:
+
+Linux (Ubuntu)
+
+Python (FastAPI, Flask)
+
+Cloud Infrastructure (AWS)
+
+CI/CD and automation
+
+Building scalable, secure backend systems
+
+This portfolio reflects both my technical skillset and my focus on clean engineering and thoughtful design.
+
+📫 Contact
+
+GitHub: https://github.com/arxyanf
+
+LinkedIn: https://www.linkedin.com/in/aryan-vaishnav-programmer
+
+Email: vaishnavaryan0@gmail.com
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+
+---
+
+### ✅ Next steps (recommended)
+After adding this README:
+
+```bash
+git add README.md
+git commit -m "docs: add professional portfolio README"
+git push
