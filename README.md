@@ -1,15 +1,60 @@
-🚀 Aryan Vaishnav – Developer Portfolio
+# 🚀 Aryan Vaishnav – Developer Portfolio
 
-Welcome to my personal developer portfolio repository! This project represents my journey as a developer with a strong focus on ☁️ Cloud, ⚙️ DevOps, and 🧠 backend engineering, combined with a modern, interactive frontend experience.
+A modern, interactive developer portfolio built with **React, Vite, Tailwind CSS, and 3D UI elements**, showcasing my work, skills, and experience in **Cloud, DevOps, and Backend Engineering**.
 
-This portfolio is built to be fast, clean, and visually engaging. It showcases my skills, experience, and projects through smooth animations, scroll-based interactions, and a cinematic UI that reflects how I think about engineering — scalable, structured, and intentional. The goal is not just to show *what* I’ve built, but *how* I approach building things.
+🌐 **Live Portfolio**: https://arxyanf.github.io/Portfolio/
 
-🌐 Live Portfolio  
-👉 https://arxyanf.github.io/Portfolio/
+---
 
-The application is built using ⚛️ React with ⚡ Vite for blazing-fast development and builds, styled entirely with 🎨 Tailwind CSS. It uses modern UI patterns, subtle 3D depth, and motion to create a polished yet professional look that works across devices 📱💻.
+## ✨ Features
 
-To run this project locally on your machine, clone the repository:
+- ⚡ Fast and lightweight build using **Vite**
+- 🎨 Modern UI with **Tailwind CSS** and smooth animations
+- 🧩 Modular React component architecture
+- 🌀 Scroll-based interactive sections (Experience & Education)
+- 🖼️ Cinematic profile modal with large image layout
+- 🧠 Developer-focused content with a clean, professional aesthetic
+- 📱 Fully responsive (mobile-first)
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React (TypeScript)
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+**UI / Design**
+- shadcn/ui
+- Glassmorphism & subtle 3D effects
+
+**Tooling**
+- Git & GitHub
+- GitHub Pages (deployment)
+- npm
+
+---
+
+## 📂 Project Structure
+
+
+Portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── sections/
+│   ├── data/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+├── package.json
+└── README.md
+
+ To run this project locally on your machine, clone the repository:
 
 git clone https://github.com/arxyanf/Portfolio.git  
 cd Portfolio
