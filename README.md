@@ -32,14 +32,14 @@ A modern, interactive developer portfolio built with **React, Vite, Tailwind CSS
 
 **Tooling**
 - Git & GitHub
-- GitHub Pages (deployment)
+- Vercel (deployment)
 - npm
 
 ---
 
 ## 📂 Project Structure
 
-
+```
 Portfolio/
 ├── public/
 ├── src/
@@ -53,32 +53,56 @@ Portfolio/
 ├── tailwind.config.ts
 ├── package.json
 └── README.md
+```
 
- To run this project locally on your machine, clone the repository:
+## 🚀 Getting Started
 
+To run this project locally on your machine, clone the repository:
+
+```bash
 git clone https://github.com/arxyanf/Portfolio.git  
-cd Portfolio
+cd Portfolio/Portfolio
+```
 
 Install the dependencies:
 
+```bash
 npm install
+```
 
 Start the development server:
 
+```bash
 npm run dev
+```
 
-The app will be available at http://localhost:5173 🚀
+The app will be available at http://localhost:8080 🚀
 
-For production, the portfolio uses Vite’s optimized build system and is deployed using GitHub Pages 📦. Deployment is handled via the gh-pages package. To deploy manually, run:
+## 📦 Deployment
 
-npm run build  
-npm run deploy
+This portfolio is optimized for deployment on **Vercel**. The production build uses Vite's optimized build system.
 
-This generates a production build and publishes it to the gh-pages branch, which GitHub Pages serves publicly.
+To build for production locally:
+
+```bash
+npm run build
+```
+
+This generates an optimized production build in the `dist/` directory.
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+For deployment, simply connect your GitHub repository to Vercel, and it will automatically deploy on every push to your main branch.
+
+## 🎨 Code Architecture
 
 The codebase is structured with reusable React components, data-driven sections, and a clean folder layout to keep things maintainable and scalable. Styling is done purely with Tailwind CSS utilities, and animations are implemented using modern React-friendly animation libraries for smooth and performant motion ✨.
 
-🛠️ Technologies used in this project include React (TypeScript), Vite, Tailwind CSS, Framer Motion, shadcn/ui components, Git, GitHub, and GitHub Pages. The project is developed on Linux 🐧 and follows standard frontend and tooling best practices.
+Technologies used in this project include React (TypeScript), Vite, Tailwind CSS, Framer Motion, shadcn/ui components, Three.js for 3D elements, and Git/GitHub. The project is developed on Linux 🐧 and follows standard frontend and tooling best practices.
 
 👨‍💻 About Me  
 I am a developer passionate about cloud infrastructure, DevOps practices, and backend systems. I enjoy working with Linux, Python, FastAPI, Flask, AWS, containers, automation, and CI/CD pipelines. I like building systems that are reliable, scalable, and boring in production (the good kind 😄).
