@@ -162,8 +162,8 @@ const ExperienceSection = () => {
   return (
     <SectionWrapper id="experience" className="bg-card/20">
       <SectionTitle
-        title="Education & Learning"
-        subtitle="Academic background and continuous learning journey"
+        title="Experiences and Education"
+        subtitle="Professional journey and academic background"
       />
 
       <div className="max-w-3xl mx-auto">

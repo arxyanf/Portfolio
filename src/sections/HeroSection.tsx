@@ -151,7 +151,7 @@ const HeroSection = ({ onNameClick }: HeroSectionProps) => {
               asChild
               className="gap-2 text-base"
             >
-              <a href="/Aryan_Vaishnav_Resume.pdf" download>
+              <a href="/Portfolio/Aryan_Vaishnav_Resume.pdf" download="Aryan_Vaishnav_Resume.pdf">
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>

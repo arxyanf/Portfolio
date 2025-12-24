@@ -15,7 +15,6 @@ export const projects: Project[] = [
     description: "A cloud-native notes application with real-time sync, deployed on AWS with auto-scaling capabilities and S3 storage integration.",
     techStack: ["Python", "FastAPI", "AWS", "Docker", "PostgreSQL"],
     githubUrl: "https://github.com/arxyanf",
-    liveUrl: "https://cloudnotes.demo.com",
   },
   {
     id: 2,
@@ -23,7 +22,6 @@ export const projects: Project[] = [
     description: "Interactive web application to measure typing speed and accuracy with real-time feedback, leaderboards, and progress tracking.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Flask", "SQLite"],
     githubUrl: "https://github.com/arxyanf",
-    liveUrl: "https://typingtest.demo.com",
   },
   {
     id: 3,
