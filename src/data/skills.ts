@@ -21,8 +21,13 @@ export const skillCategories: SkillCategory[] = [
     skills: ["Python", "Flask", "FastAPI", "REST APIs", "PostgreSQL"],
   },
   {
+    name: "Frontend",
+    icon: "Layout",
+    skills: ["HTML", "CSS", "JavaScript", "React"],
+  },
+  {
     name: "Tools",
     icon: "Wrench",
-    skills: ["Linux", "Git", "Nginx", "Bash", "VS Code", "Vim"],
+    skills: ["Linux", "Git", "Nginx", "Bash", "VS Code", "CLI"],
   },
 ];

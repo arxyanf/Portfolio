@@ -19,17 +19,17 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "DevOps CI/CD Pipeline",
-    description: "End-to-end CI/CD pipeline using GitHub Actions, Docker containers, and automated deployment to AWS EC2 with zero-downtime releases.",
-    techStack: ["GitHub Actions", "Docker", "AWS EC2", "Nginx", "Bash"],
-    githubUrl: "https://github.com/arxyanf",
-  },
-  {
-    id: 3,
     title: "Typing Speed Test",
     description: "Interactive web application to measure typing speed and accuracy with real-time feedback, leaderboards, and progress tracking.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Flask", "SQLite"],
     githubUrl: "https://github.com/arxyanf",
     liveUrl: "https://typingtest.demo.com",
+  },
+  {
+    id: 3,
+    title: "Expense Tracker",
+    description: "A full-stack expense tracking application that allows users to add, manage, and analyze daily expenses with a clean and intuitive interface.",
+    techStack: ["React", "HTML", "CSS", "JavaScript", "Flask", "PostgreSQL"],
+    githubUrl: "https://github.com/arxyanf/Expense-Tracker",
   },
 ];
