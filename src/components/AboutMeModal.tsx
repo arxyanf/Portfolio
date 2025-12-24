@@ -72,9 +72,9 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="w-full max-w-4xl"
             >
-              <div 
+              <div
                 className="relative rounded-3xl overflow-hidden backdrop-blur-xl bg-card/60 border border-border/30"
-                style={{ 
+                style={{
                   boxShadow: "0 25px 50px -12px rgba(0,0,0,0.4)"
                 }}
               >
@@ -91,9 +91,9 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                 </motion.button>
 
                 <div className="relative flex flex-col md:flex-row min-h-[500px] md:min-h-[400px]">
-                  
+
                   {/* Left Side - Profile Image Panel */}
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
@@ -101,8 +101,8 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                   >
                     {/* Profile Image */}
                     <div className="absolute inset-0">
-                      <img 
-                        src="/images/profile.jpg" 
+                      <img
+                        src="/Portfolio/images/profile.jpg"
                         alt="Aryan Vaishnav"
                         className="w-full h-full object-cover"
                         onError={(e) => {
@@ -119,18 +119,18 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                         </div>
                       </div>
                     </div>
-                    
+
                     {/* Dark overlay for depth */}
                     <div className="absolute inset-0 bg-gradient-to-br from-background/20 to-background/40" />
-                    
+
                     {/* Image overlay gradient */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-card/80 md:block hidden" />
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent md:hidden" />
-                    
+
                     {/* Edge glow */}
                     <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-primary/50 to-transparent hidden md:block" />
                     <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent md:hidden" />
-                    
+
                     {/* Floating particles */}
                     <motion.div
                       animate={{ y: [-10, 10, -10], opacity: [0.3, 0.6, 0.3] }}
@@ -145,7 +145,7 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                   </motion.div>
 
                   {/* Right Side - Content */}
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
@@ -153,7 +153,7 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                   >
                     {/* Name with sparkle */}
                     <div className="flex items-center gap-2 mb-1">
-                      <motion.h2 
+                      <motion.h2
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
@@ -186,8 +186,8 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                       transition={{ delay: 0.4 }}
                       className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base"
                     >
-                      Cloud & DevOps Engineer focused on building scalable infrastructure, 
-                      automating deployments, and making systems reliable, secure, and boring 
+                      Cloud & DevOps Engineer focused on building scalable infrastructure,
+                      automating deployments, and making systems reliable, secure, and boring
                       (in a good way).
                     </motion.p>
 
@@ -204,7 +204,7 @@ const AboutMeModal = ({ isOpen, onClose }: AboutMeModalProps) => {
                     >
                       {/* Card glow */}
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5" />
-                      
+
                       <div className="relative">
                         <div className="flex items-center gap-2 mb-2">
                           <span className="text-xl">{getTypeIcon(funContent.type)}</span>

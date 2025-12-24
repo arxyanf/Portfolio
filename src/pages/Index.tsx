@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/sections/HeroSection";
 import AboutSection from "@/sections/AboutSection";
 import SkillsSection from "@/sections/SkillsSection";
+import FocusAreasSection from "@/sections/FocusAreasSection";
 import ProjectsSection from "@/sections/ProjectsSection";
 import ExperienceSection from "@/sections/ExperienceSection";
 import CertificationsSection from "@/sections/CertificationsSection";
@@ -25,6 +26,7 @@ const Index = () => {
         <HeroSection onNameClick={() => setIsModalOpen(true)} />
         <AboutSection />
         <SkillsSection />
+        <FocusAreasSection />
         <ProjectsSection />
         <ExperienceSection />
         <CertificationsSection />

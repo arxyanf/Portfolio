@@ -33,8 +33,8 @@ const TimelineNode = ({ isActive, type }: TimelineNodeProps) => {
 
       {/* Main node */}
       <div className={`relative w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 ${isActive
-          ? 'bg-primary/20 border-primary/60'
-          : 'bg-muted/30 border-border/50'
+        ? 'bg-primary/20 border-primary/60'
+        : 'bg-muted/30 border-border/50'
         }`}>
         <Icon className={`w-4 h-4 md:w-5 md:h-5 transition-colors duration-300 ${isActive ? 'text-primary' : 'text-muted-foreground'
           }`} />
@@ -102,8 +102,8 @@ const TimelineCard = ({ item, index, totalItems }: TimelineCardProps) => {
             {/* Type badge and duration */}
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <span className={`px-2.5 py-1 text-xs font-medium rounded-md ${isExperience
-                  ? 'bg-primary/10 text-primary'
-                  : 'bg-muted/50 text-muted-foreground'
+                ? 'bg-primary/10 text-primary'
+                : 'bg-muted/50 text-muted-foreground'
                 }`}>
                 {isExperience ? 'Experience' : 'Education'}
               </span>
@@ -162,8 +162,8 @@ const ExperienceSection = () => {
   return (
     <SectionWrapper id="experience" className="bg-card/20">
       <SectionTitle
-        title="Focus Areas & Education"
-        subtitle="Core competencies and academic background"
+        title="Education & Learning"
+        subtitle="Academic background and continuous learning journey"
       />
 
       <div className="max-w-3xl mx-auto">
